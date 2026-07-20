@@ -9,6 +9,10 @@ from scipy.stats import pearsonr, spearmanr
 import random
 import datetime
 
+from huggingface_hub import login
+
+login(token=st.secrets["HF_TOKEN"])
+
 # ==========================================
 # 1. ARCHITECTURAL LAYOUT & SYSTEM CONFIG
 # ==========================================
